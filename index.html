@@ -25,11 +25,11 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-card w3-border-bottom w3-border-black" style="background-color: #588157">
+    <div class="w3-bar css-selector w3-card w3-border-bottom w3-border-black">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-text-white w3-button w3-padding-large">HOME</a>
-        <a href="#aboutme" class="w3-bar-item w3-text-white w3-button w3-padding-large w3-hide-small">ABOUT ME ｜ CONTACT</a>
-        <a href="#projects" class="w3-bar-item w3-text-white w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+        <a href="#" class="w3-bar-item w3-hover-black w3-text-black w3-button w3-padding-large">HOME</a>
+        <a href="#aboutme" class="w3-bar-item  w3-hover-black w3-text-black w3-button w3-padding-large w3-hide-small">ABOUT ME ｜ CONTACT</a>
+        <a href="#projects" class="w3-bar-item  w3-hover-black w3-text-black w3-button w3-padding-large w3-hide-small">PROJECTS</a>
     </div>
 </div>
 
@@ -44,11 +44,12 @@
 <div class="w3-content" style="max-width:2000px;margin-top:46px; padding: 0 40px 40px;">
     <!-- The Home Section -->
     <div class="w3-margin-bottom 3-wide w3-center w3-round-large w3-border w3-border-black" style="filter: drop-shadow(6px 6px 5px #838983); background-color: floralwhite">
-        <h1>NATE PAPADOGIANNIS<br></h1>
-        <i class="fa fa-map-marker" style="width:30px"></i> Bayside, New York<br>
-        <i class="fa fa-graduation-cap" style="width: 30px"></i> Rochester Institute of Technology<br>
-        <i class="fa fa-laptop" style="width: 30px"></i> Computer Science 2024
-        <br><br>
+        <h1 class="w3-margin">NATE PAPADOGIANNIS</h1>
+        <p>
+            <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-left w3-margin-top w3-margin-right" style="background-color: #588157"><i class="fa fa-map-marker" style="width:30px"></i>Bayside, New York</span>
+            <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-top w3-margin-right" style="background-color: #588157"><i class="fa fa-graduation-cap" style="width: 30px"></i>Rochester Institute of Technology</span>
+            <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-top" style="background-color: #588157"><i class="fa fa-desktop" style="width: 30px"></i>Computer Science 2024</span>
+        </p><br>
     </div>
 
     <!-- The About Me Section -->
@@ -58,9 +59,10 @@
                 <div class="w3-container w3-border w3-border-black w3-round-large " style="filter: drop-shadow(6px 6px 5px #838983); background-color: floralwhite">
                     <a class="anchor" id="aboutme"></a>
                     <h2 class="w3-wide w3-center w3-margin-top">ABOUT ME</h2>
-                    <p class="w3-center w3-text-dark-gray" style="margin-top: -5px"><i>"Who are you?"</i><br></p>
+                    <h5 class="w3-center w3-text-dark-gray" style="margin-top: -5px"><i>"Who are you?"</i></h5>
                     <div class="w3-cell-top">
                         <div class="w3-cell">
+                            <hr style="margin-left: 40px; margin-right: 40px; border-top: 1px solid black">
                             <p class="w3-justify w3-margin-bottom" style ="word-wrap: break-word; padding-left: 40px; padding-right: 40px">
                                 Hey! <b>I'm Nate Papadogiannis</b>, a 20 year old Computer Science student with a hard last name
                                 from Queens, New York (The smaller part of the big apple). I'm currently on year 3 of my 5 year Co-Op program at
@@ -85,37 +87,42 @@
 
                                 Hope to see you around, feel free to send me a message and say "Hey!"<br><br>
                             </p>
-                            <h3 class="w3-margin-top w3-margin-bottom w3-right-align" style="padding: 0 40px 0">-Nate P.<br><br></h3>
+                            <h3 class="w3-margin-top w3-margin-bottom w3-right-align" style="padding: 0 40px 0">-Nate P.</h3>
+                            <hr style="margin-left: 40px; margin-right: 40px; border-top: 1px solid black">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w3-third w3-margin-bottom" style="filter: drop-shadow(6px 6px 5px #838983);">
                 <img src="buddy.jpg" alt="A picture of Nate Papadogiannis in a yellow beaning and orange plaid with a stuffed white tiger on his shoulder. He is pointing at the tiger and smiling."
-                     style="background-color: black; width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px"
-                     class="w3-border-left w3-border-top w3-border-right w3-border-black w3-hover-opacity">
+                     style="
+                     background-color: black;
+                     width:100%;
+                     border-top-left-radius: 8px;
+                     border-top-right-radius: 8px"
+                     class="w3-border w3-border-black">
                 <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
-                    <h4 class="w3-center"><b>Nate Papadogiannis</b>｜ <span class="w3-tag w3-center w3-round-large w3-hover-amber w3-medium" style="background-color: #588157">He/Him</span></h6></h4>
+                    <h5 class="w3-center"><b>Nate Papadogiannis</b>｜ <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium">He/Him</span></h5>
                     </div>
                 <div class="w3-container w3-border w3-border-black w3-round-large w3-margin-top" style="background-color: floralwhite">
                     <!-- The Contact Section -->
                     <a class="anchor" id="contact"></a>
 
                     <h5 class="w3-wide w3-center">CONTACT</h5>
-                    <h6 class="w3-opacity w3-center" style="margin-top: -10px"><i>Drop me a line!</i></h6>
+                    <h6 class="w3-text-dark-gray w3-center" style="margin-top: -10px"><i>Drop me a line!</i></h6>
                     <div class="w3-row w3-center w3-padding-16">
-                        <div class="w3-row-padding w3-round-large w3-border w3-border-black" style="background-color: #F8C40D">
+                        <div class="w3-row-padding css-selector w3-round-large w3-border w3-border-black" style="background-color: #F8C40D">
                             <div class="w3-third w3-center w3-margin-top w3-border-right w3-border-black">
-                                <i class="fa fa-envelope-square w3-xxlarge w3-cell w3-hover-amber" style="color: black" onclick=location.href="mailto:nathan.papadogiannis@gmail.com"></i><br>
+                                <i class="fa fa-envelope-square w3-xxlarge w3-cell" style="color: black" onclick=location.href="mailto:nathan.papadogiannis@gmail.com"></i><br>
                                 <p style="color: black">Mail</p>
                             </div>
                             <div class="w3-third w3-center w3-margin-top w3-border-right w3-border-black">
-                                <i class="fa fa-phone-square w3-xxlarge w3-cell w3-hover-amber" style="color: black" onclick=location.href="tel:713-416-7098"></i><br>
+                                <i class="fa fa-phone-square w3-xxlarge w3-cell" style="color: black" onclick=location.href="tel:713-416-7098"></i><br>
                                 <p style="color: black">Text</p>
 
                             </div>
                             <div class="w3-third w3-center w3-margin-top">
-                                <i class="fa fa-github-square w3-xxlarge w3-cell w3-hover-amber" style="color: black" onclick=window.open("https://github.com/nathan-the-greathan","_blank")></i><br>
+                                <i class="fa fa-github-square w3-xxlarge w3-cell" style="color: black" onclick=window.open("https://github.com/nathan-the-greathan","_blank")></i><br>
                                 <p style="color: black">Git</p>
                             </div>
                         </div>
@@ -134,17 +141,28 @@
                 <p class="w3-text-dark-gray w3-center"><i>Check out what I'm up to right now</i></p><br><br>
             </div>
         </li>
-        <li class="w3-padding w3-border-black">HumanCast <span class="w3-tag w3-text-black w3-round-large w3-margin-left" style="background-color: #F8C40D">In Development</span></li>
-        <li class="w3-padding w3-border-black">WormBot <span class="w3-tag w3-round-large w3-margin-left" style="background-color: #588157">Done</span></li>
+        <li class="w3-padding w3-border-black">HumanCast <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-left"><b>In Development</b></span></li>
+        <li class="w3-padding w3-border-black">WormBot <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-left"><b>Done</b></span>
+        </li>
         <li class="w3-padding w3-border-black w3-text-wh" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; background-color: #BFB7B0">More to come...</li>
     </ul>
     <div class="w3-cell">
         <div class="w3-row-padding w3-padding-hor-32" style="margin:0 -16px">
             <div class="w3-third w3-margin-bottom" style="filter: drop-shadow(6px 6px 5px #838983)">
-                <img src="HumanCastBanner.png" alt="A banner depicting a beach scene with Brellbert on the sand. In the back Reads 'HumanCast, a Brellbert certified Weather Experiece'. In the lower left corner, it says 'Developed for Android'" style="width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px" class="w3-border-left w3-border-top w3-border-right w3-border-black w3-hover-opacity">
+                <img src="HumanCastBanner.png"
+                     alt="A banner depicting a beach scene with Brellbert on the sand. In the back Reads 'HumanCast, a Brellbert certified Weather Experiece'. In the lower left corner, it says 'Developed for Android'"
+                     style="width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px"
+                     class="w3-border w3-border-black w3-hover-opacity">
                 <div class="w3-container w3-border w3-border-black " style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; background-color: floralwhite">
                     <h2><b>HumanCast: Brellbert's Weather Station is Online!</b></h2>
-                    <p class="w3-opacity">June 2nd, 2021</p>
+                    <p><i class="fa fa-clock-o"></i> June 2nd, 2021</p>
+                    <p style="margin-top: -20px">
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>Native Android</b></span>
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>Java</b></span>
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>UI/UX</b></span>
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>OpenWeather</b></span>
+                    </p>
+                    <hr style="border-top: 1px solid black">
                     <p> Something that's always bugged me is the mundaneness of checking the weather every morning before getting dressed.
                         Weather apps are criminally boring (And honestly, not user-conscious). Sure, it may "feel like" 60 degrees, but what
                         does that mean to our user in words. Is it cold? Is it nice? Without feedback from the user, we'll never
@@ -172,17 +190,23 @@
                         of mobile development down.<br><br>
                         Check out the GitHub Repo below.
                     </p>
-                    <button class="w3-button w3-hover-amber w3-margin-bottom" style="background: #588157; color: floralwhite" onclick=window.open("https://github.com/nathan-the-greathan/HumanCast","_blank")>GH Repo</button>
+                    <button class="btn css-selector w3-button w3-hover-opacity w3-text-black w3-margin-bottom w3-round w3-border w3-border-black" onclick=window.open("https://github.com/nathan-the-greathan/HumanCast","_blank")>GH Repo</button>
                 </div>
             </div>
             <div class="w3-third w3-margin-bottom" style="filter: drop-shadow(6px 6px 5px #838983)">
                 <img src="WormBot.gif"
                      alt="A GIF of WormBot responding to a message with emojis that spell out 'oh worm?'"
                      style="width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px"
-                     class="w3-border-left w3-border-top w3-border-right w3-border-black w3-hover-opacity">
+                     class="w3-border w3-border-black w3-hover-opacity">
                 <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
                     <h2><b>WormBot, The Worm Week Referee</b></h2>
-                    <p class="w3-opacity">Feb 23rd, 2021</p>
+                    <p><i class="fa fa-clock-o"></i> Feb 23rd, 2021<br></p>
+                    <p style="margin-top: -20px">
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>Python</b></span>
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>Discord API</b></span>
+                        <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-top"><b>JSON Database</b></span>
+                    </p>
+                    <hr style="border-top: 1px solid black">
                     <p style="word-wrap: break-word">
                         In the past, Worm Week (Context <a class="w3-hover-amber" href="#wormweek">here</a>) had been a very small event
                         that I could scorekeep by myself, but as the participant list has grown past 50 people,

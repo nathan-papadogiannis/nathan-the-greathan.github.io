@@ -5,5 +5,85 @@ a.anchor {
     visibility: hidden;
 }
 html{
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+}
+.btn {
+    border: 1px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #3e8e41;
+    color: white;
+}
+.btn:active {
+    transform: translateY(8px);
+}
+img{
+    transition: transform .2s ease-in-out; /* Animation */
+    margin: 0 auto;
+}
+img:hover{
+    border-radius: 8px;
+    transform: translateY(-3%) scale(1);
+}
+
+.w3-tag{
+    transition: transform .1s ease-out; /* Animation */
+    margin: 0 auto;
+}
+.w3-tag:hover{
+    transform: translateY(-3px) scale(1.03)
+}
+
+.fa{
+    transition: transform .1s ease-out; /* Animation */
+    margin: 0 auto;
+}
+.fa:hover{
+    transform: translateY(5px) scale(1.4);
+}
+
+.fa:active{
+    transform: translateY(8px);
+}
+.zoom {
+    transition: transform .2s ease-in-out; /* Animation */
+    margin: 0 auto;
+}
+.zoom:hover {
+    border-radius: 8px;
+    transform: translateX(0) translateY(-3px) scale(1);
+}
+.zoom:active{
+}
+.css-selector {
+    background: linear-gradient(91deg, #6fe16c, #e6cd73);
+    background-size: 400% 400%;
+
+    -webkit-animation: Waves 14s ease infinite;
+    -moz-animation: Waves 14s ease infinite;
+    animation: Waves 14s ease infinite;
+}
+
+@-webkit-keyframes Waves {
+    0%{background-position:0 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0 52%}
+}
+@-moz-keyframes Waves {
+    0%{background-position:0 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0 52%}
+}
+@keyframes Waves {
+    0%{background-position:0 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0 52%}
 }
