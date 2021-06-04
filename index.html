@@ -1,10 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Under Construction!</title>
-</head>
+<title>Nate's Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=styles.css>
+
+<style>
+    body {
+        padding-top: 14px;
+        font-family: Arial,sans-serif;
+        background-color: #BFB7B0;
+    }
+    .mySlides {display: none}
+</style>
 <body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-card" style="background-color: #346048">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-text-white w3-button w3-padding-large">HOME</a>
+        <a href="#aboutme" class="w3-bar-item w3-text-white w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+        <a href="#projects" class="w3-bar-item w3-text-white w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-text-white w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-text-white w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                <a href="#" class="w3-bar-item w3-button">Extras</a>
+                <a href="#" class="w3-bar-item w3-button">Media</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUTME</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px; padding: 0 40px 40px;">
+    <!-- The Home Section -->
+    <div class="w3-margin-bottom 3-wide w3-center w3-round-large w3-border w3-border-black" style="background-color: floralwhite">
+        <h1>NATE PAPADOGIANNIS<br></h1>
+        <i class="fa fa-map-marker" style="width:30px"></i> Bayside, New York<br>
+        <i class="fa fa-graduation-cap" style="width: 30px"></i> Rochester Institute of Technology<br>
+        <i class="fa fa-laptop" style="width: 30px"></i> Computer Science 2024
+        <br><br>
+    </div>
+    <br>
+
+    <!-- The About Me Section -->
+    <div>
+        <div class="w3-row-padding w3-padding-hor-32" style="margin:0 -16px">
+            <div class="w3-twothird w3-margin-bottom">
+                <div class="w3-container w3-border w3-border-black w3-round-large " style="background-color: floralwhite">
+                    <a class="anchor" id="aboutme"></a>
+                    <h2 class="w3-wide w3-center w3-margin-top">ABOUT ME</h2>
+                    <p class="w3-center w3-text-dark-gray"><i>"Who are you?"</i><br></p>
+                    <div class="w3-cell-top">
+                        <div class="w3-cell">
+                            <p class="w3-justify w3-margin-bottom" style ="word-wrap: break-word; padding-left: 40px; padding-right: 40px">
+                                Hey! <b>I'm Nate Papadogiannis</b>, a 20 year old Computer Science student with a hard last name
+                                from Queens, New York (The smaller part of the big apple). I'm currently on year 3 of 5 of my Co-Op program at
+                                Rochester Institute of Technology where I've gained a ton of experience with Java, Python, C, MIPS, Dart,
+                                and now, a <i>tiny</i> bit of HTML and CSS :).<br><br>
+
+                                Of course, software makes our lives easier, but I'm especially interested in the ways it
+                                interacts with us and how we can make those interactions a little bit more human.
+                                Throughout my work, you can see plenty attempts at bringing personality to my projects,
+                                whether it be by having a spirit week Discord bot wish both teams a good night before
+                                shutting down or by making a cartoon character the face of a weather app. For more info
+                                on both those projects, <a href="#projects">here's a wormhole for you</a>.<br><br>
+
+                                Outside of developing, I'm an amateur guitarist for fun, an even more amateur digital
+                                artist, and an extremely competent gardener (And I have 20+ living plants if you want
+                                a reference for that).<br><br>
+
+                                My personal GitHub is just starting off, so I hope that you'll stay with me as I fill it
+                                up with all the cool stuff I'm planning. You can also stay updated on what I'm working on
+                                by checking back on this page later. <br><br>
+
+                                Hope to see you around, feel free to send me a message!<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="buddy.jpg" alt="Norway" style="background-color: black; width:100%; border-top-left-radius: 10px; border-top-right-radius: 10px" class="w3-border-left w3-border-top w3-border-right w3-border-black w3-hover-opacity">
+                <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px">
+                    <h4 class="w3-center"><b>Nate Papadogiannis</b></h4>
+                    <h6 class="w3-center w3-text-dark-gray w3-margin-bottom" style="margin-top: -10px"><i>(he/him/his)</i></h6>
+                </div>
+                <div class="w3-container w3-border w3-border-black w3-round-large w3-margin-top" style="background-color: floralwhite">
+                    <!-- The Contact Section -->
+                    <a class="anchor" id="contact"></a>
+
+                    <h5 class="w3-wide w3-center">CONTACT</h5>
+                    <h6 class="w3-opacity w3-center" style="margin-top: -10px"><i>Drop me a line!</i></h6>
+                    <div class="w3-row w3-center w3-padding-16">
+                        <div class="w3-row-padding w3-padding-hor-32">
+                            <div class="w3-third w3-center">
+                                <i class="fa fa-envelope-square w3-cell w3-hover-green" onclick=location.href="mailto:nathan.papadogiannis@gmail.com"></i><br>
+                            </div>
+                            <div class="w3-third w3-center">
+                                <i class="fa fa-phone-square w3-cell w3-hover-green" onclick=location.href="tel:713-416-7098"></i><br>
+                            </div>
+                            <div class="w3-third w3-center">
+                                <i class="fa fa-github-square w3-cell w3-hover-green" onclick=location.href="https://github.com/nathan-the-greathan"></i><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- The Project Section -->
+    <div class="w3-container w3-border-top w3-border-left w3-border-right w3-border-black" style="background-color: #FFFAF0; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <a class="anchor" id="projects"></a>
+        <h2 class="w3-wide w3-center w3-margin-top">PROJECTS</h2>
+        <p class="w3-text-dark-gray w3-center"><i>Check out what I'm up to right now</i></p><br><br>
+    </div>
+    <ul class="w3-ul w3-margin-bottom w3-border w3-border-black w3-text-black" style="background-color: floralwhite; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px">
+        <li class="w3-padding w3-border-black">HumanCast <span class="w3-tag w3-round-large w3-margin-left" style="background-color: #346048">In Development</span></li>
+        <li class="w3-padding w3-border-black">WormBot <span class="w3-tag w3-round-large w3-margin-left" style="background-color: #346048">Done</span></li>
+        <li class="w3-padding w3-center w3-border-black w3-text-gray">More to come...</li>
+    </ul>
+    <div class="w3-cell">
+        <div class="w3-row-padding w3-padding-hor-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+                <img src="HumanCastBanner.png" alt="Norway" style="width:100%; border-top-left-radius: 10px; border-top-right-radius: 10px" class="w3-border-left w3-border-top w3-border-right w3-border-black w3-hover-opacity">
+                <div class="w3-container w3-border w3-border-black " style="background-color: floralwhite">
+                    <h2><b>HumanCast: Brellbert's Weather Station is Online!</b></h2>
+                    <p class="w3-opacity">June 2nd, 2021</p>
+                    <p> Something that's always bugged me is the mundaneness of checking the weather every day before getting dressed.
+                        Weather apps are criminally boring and, honestly, not user-conscious. Sure, it may "feel like" 60, but what
+                        does that mean to our user in words. Is it cold? Is it nice? Without feedback from the user, we'll never
+                        know. <br><br>
+
+                        Here's where <b>HumanCast</b> comes in.<br><br>
+
+                        It's high time checking the weather becomes a two-sided relationship. <b>HumanCast</b> is a new app
+                        for Android that delivers accurate weather data, personalized forecasts, and tongue-in-cheek
+                        humor from your new weather pal, <i>Brellbert</i>.<br><br>
+                    <p>
+                    <h3><b>As of Now, <i>Brellbert</i> can...</b></h3>
+                    <ul>
+                        <li>Grab GPS data from user's device</li>
+                        <li>Access <i>OpenWeather</i> data via their <i>One Call API</i></li>
+                        <li>Give current weather forecast (With some snarky comments)</li>
+                    </ul>
+                    <p> Goals for the apps future include allowing for user feedback to facilitate forecasts that can
+                        provide hyperspecific advice such as "It's 70 degrees, but you may feel chilly. Bring a jacket!"
+                        Check out the GitHub Repo below.
+                    </p>
+                    <button class="w3-button w3-margin-bottom" style="background: #346048; color: floralwhite" onclick=location.href="https://github.com/nathan-the-greathan/HumanCast">GH Repo</button>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="WormBot.gif" alt="WormBot" style="width:100%; border-top-left-radius: 10px; border-top-right-radius: 10px" class="w3-border-left w3-border-top w3-border-right w3-border-black w3-hover-opacity">
+                <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px">
+                    <h2><b>WormBot, The Worm Week Referee</b></h2>
+                    <p class="w3-opacity">Feb 23rd, 2021</p>
+                    <p style="word-wrap: break-word">
+                        In the past, Worm Week (Context <a href="#wormweek">here</a> ) had been a very small event
+                        that I could scorekeep by myself myself, but as the participant has grown past 50 people,
+                        I've needed a way to keep track of points easily. This is the purpose of WormBot<br><br>
+
+                        <b>WormBot</b> is a Discord bot that crossposts user submissions in the submission channel in a
+                        neatly formatted embed and awards points to each user with the click of an emote. This
+                        new total gets added to the official scoreboard .json file and the newest version gets
+                        uploaded to Google Sheets. This allows me to revert points back in case points are wrongfully
+                        given ever.<br><br>
+
+                    <h3><b>As of Now, <i>WormBot</i> can...</b></h3>
+                    <ul>
+                        <li>Organize Worm Teams Randomly</li>
+                        <li>Send Out <i>Daily Wormtivities</i></li>
+                        <li>Keep Track of Points locally and in the cloud</li>
+                        <li><strike>Save The World</strike></li>
+                    </ul>
+                    <hr id="wormweek" style="border-top: 1px solid black">
+                    <h3><b>So... What is Worm Week?</b></h3><br><br>
+
+                    * Worm Week! Allow me to explain<br><br>
+
+                    Every year, the 3rd Saturday of February is Worm Day (or at least, it has been for the past
+                    3 years after I made this holiday up). Each year, 2 teams across America spend the week
+                    leading up to Worm Day competing in worm-themed creativity challenges (A.K.A. Wormtivities).
+                    These can be anything from submitting worm haikus to drawing yourself as a worm to writing
+                    a 1-sentence worm story.<br><br>
+
+                    All participants earn points from either participating in each daily Wormtivity or from a
+                    daily bonus (Like the early worm bonus where the first few participants earn double points for
+                    their team). At the end of the week, there's a Final Wormdown where you can submit whatever you want
+                    and top 3 most voted submissions earn tons of points.<br><br>
+                    </p>
+                    <button class="w3-btn w3-margin-bottom" style="background: #346048; color: floralwhite" onclick=location.href="">Worm Week '21 Pics</button> <-Coming Soon
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-container w3-border w3-round-large w3-border-black" style="background-color: floralwhite">
+                    <p><b>More to Come</b></p>
+                    <p>Come back later!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-github w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
