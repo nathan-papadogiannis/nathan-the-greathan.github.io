@@ -7,6 +7,7 @@ a.anchor {
 html{
     scroll-behavior: smooth;
 }
+
 .btn {
     border: 1px;
     color: black;
@@ -16,7 +17,6 @@ html{
     margin: 4px 2px;
     transition: transform 0.3s;
 }
-
 .btn:hover {
     transform: scale(1.1);
     background-color: #3e8e41;
@@ -25,6 +25,7 @@ html{
 .btn:active {
     transform: translateY(8px);
 }
+
 img{
     transition: transform .2s ease-in-out; /* Animation */
     margin: 0 auto;
@@ -34,6 +35,24 @@ img:hover{
     transform: translateY(-3%) scale(1);
 }
 
+.turn{
+    transition: transform .1s ease-in-out; /* Animation */
+    margin: 0 auto;
+}
+.turn:hover{
+    transform: scale(1.1) rotate(-6deg);
+}
+.turn:active{
+    transform: scale(1.1) rotate(30deg);
+}
+
+.movingbox{
+    transition: transform .3s ease-in-out; /* Animation */
+    margin: 0 auto;
+}
+.movingbox:hover{
+    transform: translateY(-1px)
+}
 .w3-tag{
     transition: transform .1s ease-out; /* Animation */
     margin: 0 auto;
@@ -47,12 +66,12 @@ img:hover{
     margin: 0 auto;
 }
 .fa:hover{
-    transform: translateY(5px) scale(1.4);
+    transform:scale(1.2);
 }
-
 .fa:active{
     transform: translateY(8px);
 }
+
 .zoom {
     transition: transform .2s ease-in-out; /* Animation */
     margin: 0 auto;
@@ -63,6 +82,7 @@ img:hover{
 }
 .zoom:active{
 }
+
 .css-selector {
     background: linear-gradient(91deg, #6fe16c, #e6cd73);
     background-size: 400% 400%;
@@ -71,7 +91,6 @@ img:hover{
     -moz-animation: Waves 14s ease infinite;
     animation: Waves 14s ease infinite;
 }
-
 @-webkit-keyframes Waves {
     0%{background-position:0 52%}
     50%{background-position:100% 49%}
