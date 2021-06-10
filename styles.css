@@ -1,3 +1,29 @@
+.w3-container{
+    background-color: floralwhite;
+}
+a.underline {
+    text-decoration: none;
+    position: relative;
+    color: #2d6539;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color: #F8C40D;
+    background-image: linear-gradient(black, mediumseagreen);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: 0 2px;
+    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+}
+a.underline:hover,
+a.underline:focus {
+    text-decoration: none;
+    color: #61a850;
+    background-color: rgba(255,202,13,0.41);
+    background-size: 100% 2px;
+}
 a.anchor {
     display: block;
     position: relative;

@@ -26,7 +26,7 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar css-selector w3-card w3-border-bottom w3-border-black">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)" onclick="smallNavToggle()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="turn w3-hover-blue w3-text-black w3-button w3-padding-large w3-hide-small">HOME</a>
         <a href="#aboutme" class="turn w3-hover-red w3-text-black w3-button w3-padding-large w3-hide-small">ABOUT ME ｜ CONTACT</a>
         <a href="#projects" class="turn w3-hover-orange w3-text-black w3-button w3-padding-large w3-hide-small">PROJECTS</a>
@@ -35,29 +35,29 @@
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-    <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="smallNavToggle()">HOME</a>
+    <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large" onclick="smallNavToggle()">ABOUT ME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="smallNavToggle()">CONTACT</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="smallNavToggle()">PROJECTS</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px; padding: 0 40px 40px;">
     <!-- The Home Section -->
-    <div class="movingbox w3-margin-bottom 3-wide w3-center w3-round-large w3-border w3-border-black" style="filter: drop-shadow(6px 6px 5px #838983); background-color: floralwhite">
-        <h1 class="w3-margin">NATE PAPADOGIANNIS</h1>
-        <p  style="margin-top: -20px; margin-bottom: -2px">
+    <div class="movingbox w3-container w3-center w3-round-large w3-border w3-border-black w3-margin-bottom" style="filter: drop-shadow(6px 6px 5px #838983)">
+        <h1 class="w3-wide w3-margin">NATE PAPADOGIANNIS</h1>
+        <p  style="margin-top: 20px">
             <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-left w3-margin-top w3-margin-right" style="background-color: #588157"><i class="fa fa-map-marker" style="width:30px"></i>Bayside, New York</span>
             <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-top w3-margin-right" style="background-color: #588157"><i class="fa fa-graduation-cap" style="width: 30px"></i>Rochester Institute of Technology</span>
             <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-top" style="background-color: #588157"><i class="fa fa-desktop" style="width: 30px"></i>Computer Science 2024</span>
-        </p><br>
+        </p>
     </div>
 
     <!-- The About Me Section -->
     <div>
         <div class="w3-row-padding w3-padding-hor-32" style="margin:0 -16px">
             <div class="movingbox w3-twothird w3-margin-bottom">
-                <div class="w3-container w3-border w3-border-black w3-round-large " style="filter: drop-shadow(6px 6px 5px #838983); background-color: floralwhite">
+                <div class="w3-container w3-border w3-border-black w3-round-large " style="filter: drop-shadow(6px 6px 5px #838983); padding-top: -8px">
                     <a class="anchor" id="aboutme"></a>
                     <h2 class="w3-wide w3-center w3-margin-top">ABOUT ME</h2>
                     <h5 class="w3-center w3-text-dark-gray" style="margin-top: -5px"><i>"Who are you?"</i></h5>
@@ -76,7 +76,7 @@
                                 Whether it be by having a spirit week Discord bot wish both teams good night before
                                 shutting down or by making a cartoon character the face of a weather app, my goal is to
                                 make things apps people enjoy using. For more info on my recent personal projects,
-                                <a class="w3-hover-amber" href="#projects">here's a wormhole for you</a>.<br><br>
+                                <a class="underline" href="#projects">here's a wormhole for you</a>.<br><br>
 
                                 Outside of coding, I'm a guitarist, a digital artist, and an extremely competent gardener
                                 (And I have 20+ <b>living</b> plants if you need a reference on that).<br><br>
@@ -85,7 +85,8 @@
                                 up with all the cool stuff I'm planning. You can also stay updated on what I'm working on
                                 by checking back on this page later. <br><br>
 
-                                Hope to see you around, feel free to send me a message and say "Hey!"<br><br>
+                                Hope to see you around, feel free to <a class="underline" href="#contact">send me a message</a>
+                                and say "Hey!"<br><br>
                             </p>
                             <h3 class="w3-margin-top w3-margin-bottom w3-right-align" style="padding: 0 40px 0">-Nate P.</h3>
                             <hr style="margin-left: 40px; margin-right: 40px; border-top: 1px solid black">
@@ -101,10 +102,10 @@
                      border-top-left-radius: 8px;
                      border-top-right-radius: 8px"
                      class="w3-border w3-border-black">
-                <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
+                <div class="w3-container w3-border w3-border-black" style="; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
                     <h5 class="w3-center"><b>Nate Papadogiannis</b>｜ <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium">He/Him</span></h5>
                     </div>
-                <div class="movingbox w3-container w3-border w3-border-black w3-round-large w3-margin-top" style="background-color: floralwhite">
+                <div class="movingbox w3-container w3-border w3-border-black w3-round-large w3-margin-top" >
                     <!-- The Contact Section -->
                     <a class="anchor" id="contact"></a>
 
@@ -112,39 +113,42 @@
                     <h6 class="w3-text-dark-gray w3-center" style="margin-top: -10px"><i>Drop me a line!</i></h6>
                     <div class="movingbox w3-row w3-center w3-padding-16">
                         <div class="w3-row-padding css-selector w3-round-large w3-border w3-border-black" style="background-color: #F8C40D">
-                            <div class="w3-half w3-center w3-margin-top w3-border-right w3-border-black">
+                            <div class="w3-third w3-center w3-margin-top w3-border-right w3-border-black">
                                 <i class="fa fa-envelope-square w3-xxlarge w3-cell" style="color: black" onclick=location.href="mailto:helloto@natefromqueens.com"></i><br>
                                 <p style="color: black">Mail</p>
                             </div>
-                            <div class="w3-half w3-center w3-margin-top">
+                            <div class="w3-third w3-center w3-margin-top w3-border-right w3-border-black">
                                 <i class="fa fa-github-square w3-xxlarge w3-cell" style="color: black" onclick=window.open("https://github.com/nathan-the-greathan","_blank")></i><br>
                                 <p style="color: black">Git</p>
+                            </div>
+                            <div class="w3-third w3-center w3-margin-top">
+                                <i class="fa fa-linkedin-square w3-xxlarge w3-cell" style="color: black" onclick=window.open("https://www.linkedin.com/in/natepapadogiannis/","_blank")></i><br>
+                                <p style="color: black">LinkedIn</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <br>
             </div>
         </div>
     </div>
     <!-- The Project Section -->
-    <ul class="movingbox w3-ul w3-margin-bottom w3-round-large w3-border w3-border-black w3-text-black" style="filter: drop-shadow(6px 6px 5px #838983);background-color: floralwhite">
-        <li class="w3-border-black" style="margin-top: -8px">
-            <div class="w3-container" style="background-color: #FFFAF0; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                <a class="anchor" id="projects"></a>
-                <h2 class="w3-wide w3-center w3-margin-top">PROJECTS</h2>
-                <p class="w3-text-dark-gray w3-center"><i>What I'm up to right now</i></p><br><br>
-            </div>
-        </li>
-        <li class="w3-padding w3-border-black" onclick=location.href="#humancast">HumanCastt
+    <div class="movingbox w3-ul w3-margin-bottom w3-round-large w3-border w3-border-black w3-text-black" style="filter: drop-shadow(6px 6px 5px #838983);">
+        <div class="w3-container w3-border-black" style="border-top-left-radius: 8px; border-top-right-radius: 8px">
+            <a class="anchor" id="projects"></a>
+            <h2 class="w3-wide w3-center w3-margin-top">PROJECTS</h2>
+            <h5 class="w3-center w3-text-dark-gray w3-margin-bottom" style="margin-top: -5px"><i>What I'm up to right now</i></h5>
+        </div>
+        <div class="w3-container w3-padding w3-border-top w3-border-black" onclick=location.href="#humancast">HumanCast
             <span class="w3-tag w3-amber w3-text-black w3-round-large w3-border w3-border-black w3-margin-left"><i class="fa fa-arrow-down"></i></span>
-            <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black"><b>In Development</b></span></li>
-        <li class="w3-padding w3-border-black" onclick=location.href="#wormbot">WormBot, the Worm Week Referee
+            <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black"><b>In Development</b> <i class="fa fa-gear"></i></span></div>
+        <div class="w3-container w3-padding w3-border-top w3-border-black" onclick=location.href="#wormbot">WormBot, the Worm Week Referee
             <span class="w3-tag w3-amber w3-text-black w3-round-large w3-border w3-border-black w3-margin-left"><i class="fa fa-arrow-down"></i></span>
-            <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black"><b>Done</b></span>
-        </li>
-        <li class="w3-padding w3-border-black w3-text-wh" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; background-color: #BFB7B0">More to come...</li>
-    </ul>
+            <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black"><b>Done</b> <i class="fa fa-check-circle"></i></span>
+        </div>
+        <div class="w3-padding w3-border-top w3-border-black" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; background-color: #BFB7B0">
+            More to come...
+        </div>
+    </div>
     <div class="w3-cell">
         <div class="w3-row-padding w3-padding-hor-32" style="margin:0 -16px">
             <div class="movingbox w3-third w3-margin-bottom" style="filter: drop-shadow(6px 6px 5px #838983)">
@@ -153,7 +157,7 @@
                      alt="A banner depicting a beach scene with Brellbert on the sand. In the back Reads 'HumanCast, a Brellbert certified Weather Experiece'. In the lower left corner, it says 'Developed for Android'"
                      style="width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px"
                      class="w3-border w3-border-black">
-                <div class="w3-container w3-border w3-border-black " style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; background-color: floralwhite">
+                <div class="w3-container w3-border w3-border-black " style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; ">
                     <h2><b>HumanCast: Brellbert's Weather Station is Online!</b></h2>
                     <p><i class="fa fa-clock-o"></i> June 2nd, 2021</p>
                     <p style="margin-top: -20px">
@@ -199,7 +203,7 @@
                      alt="A GIF of WormBot responding to a message with emojis that spell out 'oh worm?'"
                      style="width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px"
                      class="w3-border w3-border-black">
-                <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
+                <div class="w3-container w3-border w3-border-black" style="; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
                     <h2><b>WormBot, The Worm Week Referee</b></h2>
                     <p><i class="fa fa-clock-o"></i> Feb 23rd, 2021<br></p>
                     <p style="margin-top: -20px">
@@ -245,7 +249,7 @@
                 </div>
             </div>
             <div class="w3-third w3-margin-bottom" style="filter: drop-shadow(6px 6px 5px #838983)">
-                <div class="movingbox w3-center w3-container w3-border w3-round-large w3-border-black" style="background-color: floralwhite">
+                <div class="movingbox w3-center w3-container w3-border w3-round-large w3-border-black">
                     <p><b>More to Come</b></p>
                     <p>Come back later!</p>
                 </div>
@@ -282,13 +286,26 @@
     }
 
     // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
+    function smallNavToggle() {
         var x = document.getElementById("navDemo");
         if (x.className.indexOf("w3-show") === -1) {
             x.className += " w3-show";
         } else {
             x.className = x.className.replace(" w3-show", "");
         }
+    }
+
+    function darkToggle(){
+        var background = document.body;
+        var containers = document.getElementsByClassName("w3-container");
+        for (let i = 0; i < containers.length; i++) {
+            darkMode(containers[i]);
+        }
+        darkMode(background)
+    }
+
+    function darkMode(element){
+        element.classList.toggle("dark-mode")
     }
 </script>
 
