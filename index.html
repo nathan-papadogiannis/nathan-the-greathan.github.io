@@ -26,15 +26,16 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar css-selector w3-card w3-border-bottom w3-border-black">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="turn w3-hover-amber w3-text-black w3-button w3-padding-large">HOME</a>
-        <a href="#aboutme" class="turn w3-hover-pale-green w3-text-black w3-button w3-padding-large w3-hide-small">ABOUT ME ｜ CONTACT</a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="turn w3-hover-blue w3-text-black w3-button w3-padding-large w3-hide-small">HOME</a>
+        <a href="#aboutme" class="turn w3-hover-red w3-text-black w3-button w3-padding-large w3-hide-small">ABOUT ME ｜ CONTACT</a>
         <a href="#projects" class="turn w3-hover-orange w3-text-black w3-button w3-padding-large w3-hide-small">PROJECTS</a>
     </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
     <a href="#aboutme" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
     <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
@@ -45,7 +46,7 @@
     <!-- The Home Section -->
     <div class="movingbox w3-margin-bottom 3-wide w3-center w3-round-large w3-border w3-border-black" style="filter: drop-shadow(6px 6px 5px #838983); background-color: floralwhite">
         <h1 class="w3-margin">NATE PAPADOGIANNIS</h1>
-        <p>
+        <p  style="margin-top: -20px; margin-bottom: -2px">
             <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-left w3-margin-top w3-margin-right" style="background-color: #588157"><i class="fa fa-map-marker" style="width:30px"></i>Bayside, New York</span>
             <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-top w3-margin-right" style="background-color: #588157"><i class="fa fa-graduation-cap" style="width: 30px"></i>Rochester Institute of Technology</span>
             <span class="w3-tag w3-text-black css-selector w3-border w3-border-black w3-round-large w3-hover-amber w3-medium w3-margin-top" style="background-color: #588157"><i class="fa fa-desktop" style="width: 30px"></i>Computer Science 2024</span>
@@ -67,21 +68,20 @@
                                 Hey! <b>I'm Nate Papadogiannis</b>, a 20 year old Computer Science student with a hard last name
                                 from Queens, New York (The smaller part of the big apple). I'm currently on year 3 of my 5 year Co-Op program at
                                 RIT where I've gained a ton of experience with Java, Python, C, MIPS, Android Native,
-                                and after this site, a <i>tiny</i> bit of HTML and CSS :).<br><br>
+                                and after this site, HTML and CSS :).<br><br>
 
                                 Of course, software makes our lives easier, but I'm especially interested in the ways it
                                 interacts with us and how we can make those interactions a little bit more human.
-                                Throughout my work, you can see plenty of attempts at bringing personality to my projects.
+                                Throughout my work, I like to try and add personality to my projects.
                                 Whether it be by having a spirit week Discord bot wish both teams good night before
                                 shutting down or by making a cartoon character the face of a weather app, my goal is to
-                                make things people enjoy using. For more info on my recent personal projects,
+                                make things apps people enjoy using. For more info on my recent personal projects,
                                 <a class="w3-hover-amber" href="#projects">here's a wormhole for you</a>.<br><br>
 
-                                Outside of coding, I'm an amateur guitarist for fun, an even more amateur digital
-                                artist, and an extremely competent gardener (And I have 20+ <b>living</b> plants if you need
-                                a reference on that).<br><br>
+                                Outside of coding, I'm a guitarist, a digital artist, and an extremely competent gardener
+                                (And I have 20+ <b>living</b> plants if you need a reference on that).<br><br>
 
-                                My personal GitHub is just starting off, so I hope that you'll stay with me as I fill it
+                                My personal GitHub is just starting off, so I hope that you'll check up on it as I fill it
                                 up with all the cool stuff I'm planning. You can also stay updated on what I'm working on
                                 by checking back on this page later. <br><br>
 
@@ -133,7 +133,7 @@
             <div class="w3-container" style="background-color: #FFFAF0; border-top-left-radius: 8px; border-top-right-radius: 8px;">
                 <a class="anchor" id="projects"></a>
                 <h2 class="w3-wide w3-center w3-margin-top">PROJECTS</h2>
-                <p class="w3-text-dark-gray w3-center"><i>Check out what I'm up to right now</i></p><br><br>
+                <p class="w3-text-dark-gray w3-center"><i>What I'm up to right now</i></p><br><br>
             </div>
         </li>
         <li class="w3-padding w3-border-black">HumanCast <span class="css-selector w3-tag w3-text-black w3-round-large w3-border w3-border-black w3-margin-left"><b>In Development</b></span></li>
@@ -192,7 +192,7 @@
                 <img src="WormBot.gif"
                      alt="A GIF of WormBot responding to a message with emojis that spell out 'oh worm?'"
                      style="width:100%; border-top-left-radius: 8px; border-top-right-radius: 8px"
-                     class="w3-border w3-border-black w3-hover-opacity">
+                     class="w3-border w3-border-black">
                 <div class="w3-container w3-border w3-border-black" style="background-color: floralwhite; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px">
                     <h2><b>WormBot, The Worm Week Referee</b></h2>
                     <p><i class="fa fa-clock-o"></i> Feb 23rd, 2021<br></p>
